@@ -1,0 +1,31 @@
+
+
+
+POST http://localhost:3000/questions HTTP/1.1
+content-type: application/json
+
+{
+    "user_id": 1,
+    "title": "Question2",
+    "content":"Conetent2"
+}
+
+### 
+GET http://localhost:3000/questions  HTTP/1.1
+
+
+###
+GET http://localhost:3000/question/2  HTTP/1.1
+
+###
+DELETE  http://localhost:3000/question/3  HTTP/1.1
+
+
+###
+PUT  http://localhost:3000/question/4  HTTP/1.1
+content-type: application/json
+
+{
+    "title": "my title2",
+    "content":"my content2"
+}
